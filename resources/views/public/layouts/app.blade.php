@@ -173,18 +173,18 @@
                                     <div class="col-md-6">
                                         <ul>
                                             <li><a href="#">Home</a></li>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Menu</a></li>
+                                            <li><a href="#">Locations</a></li>
+                                            <li><a href="#">Catering</a></li>
                                         </ul>
                                     </div>
 
                                     <div class="col-md-6">
                                         <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Gift Cards</a></li>
+                                            <li><a href="#">Franchising</a></li>
+                                            <li><a href="#">Corporate</a></li>
+                                            <li><a href="#">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>

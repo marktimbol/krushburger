@@ -103,7 +103,7 @@ header {
 
 .Contact {
   width: 100%;
-  height: 342px;
+  height: 420px;
   background: url("../../../images/nuggets.jpg") no-repeat; }
 
 .Contact__content {
@@ -138,7 +138,7 @@ header {
 
 .Ingredients {
   width: 100%;
-  height: 342px;
+  height: 420px;
   background: url("../../../images/ingredients.jpg") no-repeat; }
 
 .Ingredients__content {
@@ -167,6 +167,7 @@ header {
 .Menus__eating {
   width: 100%;
   height: 558px;
+  padding-right: 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +252,7 @@ footer {
     .Footer__social li a i {
       margin-top: 12px; }
     .Footer__social li a:hover {
-      color: black !important;
+      color: white !important;
       background: #faa31b; }
 
 /*# sourceMappingURL=app.css.map */

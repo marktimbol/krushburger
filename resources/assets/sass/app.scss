@@ -141,7 +141,7 @@ header {
 
 .Contact {
 	width: 100%;
-	height: 342px;
+	height: 420px;
 	background: url('../../../images/nuggets.jpg') no-repeat;
 }
 
@@ -174,7 +174,7 @@ header {
 
 .Ingredients {
 	width: 100%;
-	height: 342px;
+	height: 420px;
 	background: url('../../../images/ingredients.jpg') no-repeat;
 }
 
@@ -203,6 +203,7 @@ header {
 .Menus__eating {
 	width: 100%;
 	height: 558px;
+	padding-right: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -293,7 +294,7 @@ footer {
 				margin-top: 12px;
 			}
 			&:hover {
-				color: black !important;
+				color: white !important;
 				background: $orange;
 			}
 		}
