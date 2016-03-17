@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Komika';
+  src: url("../../fonts/Komika.eot");
+  src: local("☺"), url("../../fonts/Komika.woff") format("woff"), url("../../fonts/Komika.ttf") format("truetype"), url("../../fonts/Komika.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Komika; }
+
+header {
+  position: relative;
+  z-index: 9999; }
+  header nav {
+    height: 89px;
+    background: url("../../images/top-branding.png") repeat-x; }
+    header nav ul {
+      float: right;
+      list-style: none;
+      margin-top: 10px; }
+      header nav ul li {
+        float: left;
+        margin-right: 40px; }
+        header nav ul li:last-child {
+          margin-right: 0; }
+        header nav ul li a {
+          color: #761213;
+          font-family: "Komika"; }
+          header nav ul li a:hover {
+            color: #333;
+            text-decoration: none; }
+  header .logo {
+    margin-top: -100px; }
+
+.Slideshow {
+  width: 100%;
+  height: 520px;
+  margin-top: -133px;
+  position: relative;
+  background: url("../../../images/slide-bg.jpg") repeat-x; }
+
+.Slideshow__content {
+  margin-top: 200px; }
+
+.Slideshow__intro-text {
+  color: #faa31b;
+  font-size: 55px; }
+
+.Slideshow__images {
+  float: right;
+  margin-top: -100px; }
+
+.Slideshow__bottom-bg {
+  width: 100%;
+  height: 26px;
+  position: absolute;
+  bottom: 0;
+  background: url("../../../images/bottom-branding.png") repeat-x; }
+
+.Burgers .Burgers__title {
+  color: white;
+  text-align: center;
+  margin: 40px 0; }
+  .Burgers .Burgers__title span {
+    width: 301px;
+    height: 49px;
+    padding: 0 30px;
+    background: url("../../../images/title-bg.png") no-repeat; }
+
+.Burgers .Burgers__list {
+  margin-top: 40px; }
+  .Burgers .Burgers__list .hand {
+    width: 167px;
+    height: 124px;
+    top: -40px;
+    right: 0;
+    z-index: 9999;
+    position: absolute;
+    background: url("../../../images/hand.png") no-repeat; }
+
+.ViewMenu h3 {
+  font-size: 20px;
+  text-align: center;
+  top: 50px;
+  z-index: 9999;
+  line-height: 26px;
+  position: relative; }
+  .ViewMenu h3 span {
+    width: 100px;
+    height: 100px;
+    background: #faa31b;
+    border-radius: 100%;
+    padding: 19px 20px;
+    border: 5px solid white;
+    display: inline-block; }
+  .ViewMenu h3 a {
+    color: white; }
+    .ViewMenu h3 a:hover {
+      color: white; }
+      .ViewMenu h3 a:hover span {
+        box-shadow: 0px 0px 10px #faa31b; }
+
+.Contact {
+  width: 100%;
+  height: 342px;
+  background: url("../../../images/nuggets.jpg") no-repeat; }
+
+.Contact__content {
+  height: 100%; }
+  .Contact__content p {
+    color: white;
+    text-align: center; }
+
+.Contact__title {
+  font-size: 26px;
+  font-family: "Komika"; }
+
+.Contact__number {
+  font-size: 34px;
+  font-family: "Komika"; }
+
+.Contact__bg {
+  height: 100%;
+  background: rgba(118, 18, 19, 0.8);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.Ingredients {
+  width: 100%;
+  height: 342px;
+  background: url("../../../images/ingredients.jpg") no-repeat; }
+
+.Ingredients__content {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.Menus {
+  margin: 40px 0px; }
+
+.Menus__content {
+  background: #faa31b; }
+  .Menus__content h3 {
+    font-size: 36px;
+    color: #761213;
+    text-align: center;
+    padding: 20px 0px; }
+
+.Menus__eating {
+  width: 100%;
+  height: 558px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: url("../../../images/eating-burger.png") no-repeat; }
+  .Menus__eating p {
+    color: white;
+    font-size: 26px;
+    font-family: "Komika";
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white; }
+
+.Menu {
+  margin-bottom: 60px; }
+
+.Menu__list {
+  padding-right: 40px;
+  margin-top: 30px; }
+
+.Menu__price {
+  color: #761213;
+  font-size: 17px;
+  text-align: center;
+  font-family: "Komika"; }
+
+.no-spacing {
+  margin: 0; }
+  .no-spacing .col-md-6 {
+    padding: 0; }
+
+footer {
+  width: 100%;
+  height: 280px;
+  background: url("../../../images/footer-bg.jpg") repeat-x; }
+
+.Footer__content {
+  padding: 40px 0px; }
+  .Footer__content ul {
+    list-style: none;
+    padding-left: 0; }
+    .Footer__content ul li {
+      line-height: 24px; }
+      .Footer__content ul li a {
+        color: white; }
+        .Footer__content ul li a:hover {
+          color: #faa31b;
+          text-decoration: none; }
+
+.Footer__title {
+  color: white;
+  font-weight: bold;
+  font-family: Arial;
+  margin-bottom: 40px; }
+
+.Footer__social li {
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 15px; }
+  .Footer__social li a {
+    color: #333 !important;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    display: block; }
+    .Footer__social li a i {
+      margin-top: 12px; }
+    .Footer__social li a:hover {
+      color: black !important;
+      background: #faa31b; }
+
+/*# sourceMappingURL=app.css.map */
