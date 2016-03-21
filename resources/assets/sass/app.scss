@@ -11,6 +11,13 @@ $orange: #faa31b;
 $gray: #333;
 $font: 'Komika';
 
+.row-equal-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: Komika;
 }
@@ -81,8 +88,8 @@ header {
 }
 
 
-.Burgers {
-	.Burgers__title {
+.Fancy__Burgers {
+	.Fancy__Burgers--title {
 		color: white;
 		text-align: center;
 		margin: 40px 0;
@@ -94,7 +101,7 @@ header {
 		}
 	}
 
-	.Burgers__list {
+	.Burgers {
 		margin-top: 40px;
 		.hand {
 			width: 167px;
@@ -105,6 +112,10 @@ header {
 			position: absolute;
 			background: url('../../../images/hand.png') no-repeat;
 		}
+	}
+
+	.Burgers__Burger {
+		margin-bottom: 20px;
 	}
 }
 
@@ -301,8 +312,31 @@ footer {
 	}
 }
 
+.Footer__subscribe {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.Footer__title {
+		font-size: 18px;
+		margin-bottom: 0;
+		span {
+			color: $orange;
+			font-family: $font;
+			display: block;
+		}
 
+		a {
+			color: white;
+			&:hover, &:focus {
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+}
 
+@import 'components/Overlay';
+@import 'components/MediaQueries';
 
 
 

@@ -22,6 +22,9 @@ elixir(function(mix) {
     	.scripts([
     		bowersPath + 'jquery/dist/jquery.js',
 			bowersPath + 'bootstrap/dist/js/bootstrap.js',
+            'libs/modernizr.js',
+            'libs/classie.js',
+            'libs/overlay.js'
     	], 'public/js/app.js')
 
     	.copy('bower_components/bootstrap/fonts', 'public/build/fonts/')

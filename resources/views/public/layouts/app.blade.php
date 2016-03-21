@@ -16,11 +16,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-4 align-right">
-                            <ul>
+                            <ul class="hidden-xs">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Locations</a></li>
                                 <li><a href="#">Franchising</a></li>
                                 <li><a href="#">Corporate</a></li>
+                            </ul>
+
+                            <ul class="visible-xs">
+                                <li>
+                                    <a href="#" id="trigger-overlay">
+                                        <i class="fa fa-bars fa-2x"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -29,7 +37,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-xs-6">
                         <h1>
                             <img src="/images/logo.png" 
                                 alt="Krush Burger" title="Krush Burger" width="239" height="164" class="logo img-responsive" />
@@ -43,16 +51,16 @@
             <div class="container">
                 <div class="row">
                     <div class="Slideshow__content">
-                        <div class="col-md-5">
+                        <div class="col-md-5 col-xs-12">
                             <h2 class="Slideshow__intro-text">
                                 Let your taste buds quiver
                             </h2>
                         </div>
 
-                        <div class="col-md-7">
+                        <div class="col-md-7 col-xs-12">
                             <div class="Slideshow__images">
                                 <img src="/images/slide-burger.png" 
-                                    alt="Krush Burger" title="Krush Burger" width="540" height="337" class="img-responsive" />
+                                    alt="Krush Burger" title="Krush Burger" class="img-responsive" />
                             </div>
                         </div>
                     </div>
@@ -61,21 +69,21 @@
             <div class="Slideshow__bottom-bg"></div>
         </div>
 
-        <div class="Burgers">
+        <div class="Fancy__Burgers">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="Burgers__title">
+                        <h2 class="Fancy__Burgers--title">
                             <span>Fancy Burgers</span>
                         </h2>
                     </div>
 
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="Burgers__list">
+                            <div class="Burgers">
                                 <div class="hand"></div>
                                 @foreach( range(1, 4) as $index )
-                                <div class="col-md-3">
+                                <div class="Burgers__Burger col-md-3 col-xs-6">
                                     <img src="/images/burger1.jpg" 
                                         alt="Krush Burger" title="Krush Burger" class="logo img-responsive" />
                                 </div>
@@ -132,9 +140,9 @@
                     <div class="col-md-12">
                         <div class="Menus__content">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-5 hidden-xs">
                                     <div class="Menus__eating">
-                                        <p>Stunning</p>
+                                        {{-- <p>Stunning</p> --}}
                                     </div>
                                 </div>
 
@@ -142,7 +150,7 @@
                                     <h3>Krush Burgers</h3>
                                     <div class="row Menu__list">
                                         @foreach( range(1, 6) as $index )
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 col-xs-6">
                                             <div class="Menu">
                                                 <img src="/images/menu.png" 
                                                     alt="Krush Burger" title="Krush Burger" class="img-responsive" />
@@ -164,68 +172,84 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="Footer__content">
-                            <div class="col-md-3">
-                                <h5 class="Footer__title">
-                                    Links
-                                </h5>   
+                            <div class="row row-equal-height">
+                                <div class="col-md-3 col-xs-5">
+                                    <h5 class="Footer__title">
+                                        Links
+                                    </h5>   
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Menu</a></li>
-                                            <li><a href="#">Locations</a></li>
-                                            <li><a href="#">Catering</a></li>
-                                        </ul>
-                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-6">
+                                            <ul>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Menu</a></li>
+                                                <li><a href="#">Locations</a></li>
+                                                <li><a href="#">Catering</a></li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <li><a href="#">Gift Cards</a></li>
-                                            <li><a href="#">Franchising</a></li>
-                                            <li><a href="#">Corporate</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                        </ul>
+                                        <div class="col-md-6 col-xs-6">
+                                            <ul>
+                                                <li><a href="#">Gift Cards</a></li>
+                                                <li><a href="#">Franchising</a></li>
+                                                <li><a href="#">Corporate</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-3">
-                                <h5 class="Footer__title">
-                                    Follow Us
-                                </h5>  
+                                <div class="col-md-3 col-xs-7">
+                                    <h5 class="Footer__title">
+                                        Follow Us
+                                    </h5>  
 
-                                <ul class="Footer__social">
-                                    <li>
+                                    <ul class="Footer__social">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-facebook fa-2x"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-twitter fa-2x"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-md-3 col-xs-6">
+                                    <h5 class="Footer__title">
+                                        Download our app
+                                    </h5>  
+                                </div>
+
+                                <div class="col-md-3 col-xs-6 Footer__subscribe">
+                                    <h5 class="Footer__title">
                                         <a href="#">
-                                            <i class="fa fa-facebook fa-2x"></i>
+                                            Subscribe for <span>Discounts</span>
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-twitter fa-2x"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <div class="col-md-3">
-                                <h5 class="Footer__title">
-                                    Download our app
-                                </h5>  
-                            </div>
-
-                            <div class="col-md-3">
-                                <h5 class="Footer__title">
-                                    Subscribe for <span>Discounts</span>
-                                </h5>  
+                                    </h5>  
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>  
         </footer>
+
+        <div class="overlay overlay-slidedown">
+            <button type="button" class="overlay-close">Close</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Franchising</a></li>
+                    <li><a href="#">Corporate</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <p style="margin-top: 200px;">&nbsp;</p>
 

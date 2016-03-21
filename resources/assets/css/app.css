@@ -6,6 +6,11 @@
   font-weight: normal;
   font-style: normal; }
 
+.row-equal-height {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Komika; }
 
@@ -58,19 +63,19 @@ header {
   bottom: 0;
   background: url("../../../images/bottom-branding.png") repeat-x; }
 
-.Burgers .Burgers__title {
+.Fancy__Burgers .Fancy__Burgers--title {
   color: white;
   text-align: center;
   margin: 40px 0; }
-  .Burgers .Burgers__title span {
+  .Fancy__Burgers .Fancy__Burgers--title span {
     width: 301px;
     height: 49px;
     padding: 0 30px;
     background: url("../../../images/title-bg.png") no-repeat; }
 
-.Burgers .Burgers__list {
+.Fancy__Burgers .Burgers {
   margin-top: 40px; }
-  .Burgers .Burgers__list .hand {
+  .Fancy__Burgers .Burgers .hand {
     width: 167px;
     height: 124px;
     top: -40px;
@@ -78,6 +83,9 @@ header {
     z-index: 9999;
     position: absolute;
     background: url("../../../images/hand.png") no-repeat; }
+
+.Fancy__Burgers .Burgers__Burger {
+  margin-bottom: 20px; }
 
 .ViewMenu h3 {
   font-size: 20px;
@@ -254,5 +262,137 @@ footer {
     .Footer__social li a:hover {
       color: white !important;
       background: #faa31b; }
+
+.Footer__subscribe {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .Footer__subscribe .Footer__title {
+    font-size: 18px;
+    margin-bottom: 0; }
+    .Footer__subscribe .Footer__title span {
+      color: #faa31b;
+      font-family: "Komika";
+      display: block; }
+    .Footer__subscribe .Footer__title a {
+      color: white; }
+      .Footer__subscribe .Footer__title a:hover, .Footer__subscribe .Footer__title a:focus {
+        color: white;
+        text-decoration: none; }
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(250, 163, 27, 0.9); }
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../../images/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100; }
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative; }
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.overlay ul li a {
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Komika";
+  display: block;
+  color: #761213;
+  transition: color 0.2s; }
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #212121;
+  text-decoration: none; }
+
+/* Effects */
+.overlay-slidedown {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+  transition: transform 0.4s ease-in-out, visibility 0s 0.4s; }
+
+.overlay-slidedown.open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  z-index: 9999; }
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px; }
+  .overlay ul li {
+    min-height: 34px; } }
+
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .Slideshow__intro-text {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px; }
+  .Slideshow__content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 150px; }
+  .Slideshow__images {
+    float: none;
+    margin-top: 0; }
+  .Footer__content .row-equal-height {
+    display: block; } }
 
 /*# sourceMappingURL=app.css.map */
