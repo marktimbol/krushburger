@@ -14,6 +14,16 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: Komika; }
 
+.Page__title {
+  color: white;
+  font-size: 30px;
+  margin: 40px 0; }
+  .Page__title span {
+    width: 301px;
+    height: 49px;
+    padding: 0 30px;
+    background: url("../../../images/title-bg.png") no-repeat; }
+
 header {
   position: relative;
   z-index: 9999; }
@@ -64,14 +74,7 @@ header {
   background: url("../../../images/bottom-branding.png") repeat-x; }
 
 .Fancy__Burgers .Fancy__Burgers--title {
-  color: white;
-  text-align: center;
-  margin: 40px 0; }
-  .Fancy__Burgers .Fancy__Burgers--title span {
-    width: 301px;
-    height: 49px;
-    padding: 0 30px;
-    background: url("../../../images/title-bg.png") no-repeat; }
+  text-align: center; }
 
 .Fancy__Burgers .Burgers {
   margin-top: 40px; }

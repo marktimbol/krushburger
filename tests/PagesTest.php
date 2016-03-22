@@ -10,4 +10,9 @@ class PagesTest extends TestCase
 	{
 		$this->visit('/');
 	}
+
+	public function test_it_displays_menus_page()
+	{
+		$this->visit('/menus');
+	}
 }

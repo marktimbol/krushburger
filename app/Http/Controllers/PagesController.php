@@ -12,4 +12,9 @@ class PagesController extends Controller
     {
     	return view('public.home');
     }
+
+    public function menus()
+    {
+    	return view('public.menus');
+    }
 }

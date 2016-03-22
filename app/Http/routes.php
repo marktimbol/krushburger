@@ -12,10 +12,8 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
-	Route::get('/', 'PagesController@home');
-});
-
-Route::group(['middleware' => 'web'], function () {
     Route::auth();
-    Route::get('/home', 'HomeController@index');
+
+	Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
+	Route::get('/menus', ['as' => 'menus', 'uses' => 'PagesController@menus']);
 });
